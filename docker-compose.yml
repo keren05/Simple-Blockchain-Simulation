@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  blockchain:
+    build:
+      context: .
+    container_name: blockchain_service
+    command: python blockchain_simulation.py
+    volumes:
+      - .:/app
